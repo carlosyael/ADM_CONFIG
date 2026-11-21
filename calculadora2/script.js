@@ -146,7 +146,7 @@ numberButtons.forEach(button => {
 
 operationButtons.forEach(button => {
     button.addEventListener('click', () => {
-        calculator.chooseOperation(button.innerText)
+        calculator.chooseOperation(button.dataset.operation)
         calculator.updateDisplay()
     })
 })
